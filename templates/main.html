@@ -1,0 +1,22 @@
+<html>
+<head><title>SF python!</title></head>
+<body>
+    <h1>Welcome to the WWW of 1995!</h1>
+    <br>
+    <h2><span id="user-count">0</span> users are currently viewing this page!</h2>
+  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var url = "http://" + document.domain + ":" + location.port;
+        var socket = io.connect(url + "/fgwebsockets");
+        socket.on('msg', function(msg) {
+            $("#user-count").html(msg.count);
+        });
+      });
+    </script>
+
+</body>
+</html>
