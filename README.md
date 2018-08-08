@@ -7,10 +7,10 @@ https://www.fullstackpython.com/websockets.html
 
 
 # Requirements
-##pip install flask redis flask-socketio gevent gevent-websocket
+pip install flask redis flask-socketio gevent gevent-websocket
 
 
-###result
+### result
 click==6.7
 Flask==1.0.2
 Flask-SocketIO==3.0.1
