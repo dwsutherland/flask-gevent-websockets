@@ -1,4 +1,9 @@
 # flask-gevent-websockets
+Example code from tutorial given by Matt Makai:
+https://youtu.be/L5YQbNrFfyw
+
+Referenced in his full stack python site:
+https://www.fullstackpython.com/websockets.html
 
 
 # Requirements
